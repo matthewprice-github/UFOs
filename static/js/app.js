@@ -61,13 +61,13 @@ function updateFilters() {
       if (filter[0] == "city"){
         filteredData = filteredData.filter(row => row.city === filter[1]);
       }
-      else if (filter[0] == "country"){
+      if (filter[0] == "country"){
         filteredData = filteredData.filter(row => row.country === filter[1]);
       }
-      else if (filter[0] == "datetime"){
+      if (filter[0] == "datetime"){
         filteredData = filteredData.filter(row => row.datetime === filter[1]);
       }
-      else if (filter[0] == "shape"){
+      if (filter[0] == "shape"){
         filteredData = filteredData.filter(row => row.shape === filter[1]);
       }
     });
